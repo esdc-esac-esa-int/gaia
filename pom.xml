@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <artifactId>GacsConnection</artifactId>
+
+    <properties>
+        <!-- Change this if ESDC releases a more recent tag -->
+        <src.tag>gaia-tapplus-access-lib-0.2_20170526</src.tag>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <build>
+
+        <sourceDirectory>${project.basedir}/libs/java/tags/${src.tag}/src</sourceDirectory>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+
+    </build>
+
+    <groupId>int.esa.esac.esdc</groupId>
+    <version>0.2</version>
+    <modelVersion>4.0.0</modelVersion>
+
+</project>
